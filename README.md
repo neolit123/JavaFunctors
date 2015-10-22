@@ -1,8 +1,8 @@
 ### MOTIVATION
 
-Functors (or function objects) are missing as a built-in feature in Java
-and the suggested methods of doing callbacks is either by using Interfaces
-or Lambdas.
+Functors (or function objects) are missing as a built-in feature in Java SE 7
+and the suggested method of doing callbacks is to use Interfaces.
+Lambdas and direct method references are a SE 8 only feature.
 
 ### SOLUTIONS
 
@@ -81,7 +81,8 @@ f = null;
 ### NOTES
 
 The class should be thread safe as long as you don't call the static methods
-setExitOnException() or setVerbose() from multiple threads at the same time.
+setExitOnException() or setVerbose() from multiple threads at the same time,
+or if you modify the same Functor object from multiple threads.
 
 Beware that usage of Functors can confuse the readers of your source code and
 make it prone to runtime errors. However, they do add great flexibility
