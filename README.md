@@ -1,10 +1,10 @@
-* MOTIVATION:
+### MOTIVATION
 
 Functors (or function objects) are missing as a built-in feature in Java
 and the suggested methods of doing callbacks is either by using Interfaces
 or Lambdas.
 
-* SOLUTIONS
+### SOLUTIONS
 
 Since SE 7 the Method class is available, which allows reflection of class
 instance methods:
@@ -24,7 +24,7 @@ public class SomeClass
 ...
 
 // create an instance of SomeClass
-SomeClass instance = new SomeClass(); 
+SomeClass instance = new SomeClass();
 
 // prepare the arguments for the method search
 Class<?>[] args = { String.class, String.class };
@@ -33,10 +33,10 @@ Class<?>[] args = { String.class, String.class };
 Method method = instance.getClass().getMethod("methodName", args);
 
 // invoke with arguments; the result has to be casted explicitly!
-Sring result = (String)method.invoke("hello", "world"); 
+Sring result = (String)method.invoke("hello", "world");
 ```
 
-* IMPLEMENTATION:
+### IMPLEMENTATION
 
 Based on that, this Github project includes the fw.utils.Functor class which
 has the following usage:
@@ -78,9 +78,9 @@ f.dispose();
 f = null;
 ```
 
-* NOTES:
+### NOTES
 
-The class should be thread safe as long as you don't call the static methods 
+The class should be thread safe as long as you don't call the static methods
 setExitOnException() or setVerbose() from multiple threads at the same time.
 
 Beware that usage of Functors can confuse the readers of your source code and
@@ -92,8 +92,8 @@ a framework, but can add a lot of extra lines of code if you have a lot of
 callbacks between different methods, as each method relation may require
 a separate Interface definition.
 
-* LICENSE
+### LICENSE
 
-This source code in this project is released in the public domain without
+The source code in this project is released in the public domain without
 waranty of any kind. Providing credit to the authors is recommended but
 not mandatory.
