@@ -92,4 +92,8 @@ a framework, but can add a lot of extra lines of code if you have a lot of
 callbacks between different methods, as each method relation may require
 a separate Interface definition.
 
-The Functor class is public domain!
+* LICENSE
+
+This source code in this project is released in the public domain without
+waranty of any kind. Providing credit to the authors is recommended but
+not mandatory.

@@ -10,8 +10,8 @@
  * String result = (String)f.invoke(string1, string2);
  * f.dispose();
  *
- * this source code is released in the public domain without warranty
- * of any kind!
+ * This source code is released in the public domain without waranty of any
+ * kind. Providing credit to the authors is recommended but not mandatory.
  */
 
 package fw.utils;

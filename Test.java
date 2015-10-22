@@ -1,8 +1,8 @@
 /* Java Functor Test;
  * (c) 2015, Lubomir I. Ivanov
  *
- * this source code is released in the public domain without warranty
- * of any kind!
+ * This source code is released in the public domain without waranty of any
+ * kind. Providing credit to the authors is recommended but not mandatory.
  */
 
 
