@@ -1,5 +1,10 @@
-all:
+all: Test.class
+
+Test.class:
 	javac Test.java
 
-run: $(EXE)
+run: Test.class
 	java Test
+
+clean:
+	rm Test.class && rm ./fw/utils/Functor.class
